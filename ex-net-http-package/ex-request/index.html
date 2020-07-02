@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Net Request exploration</title>
+</head>
+
+<body>
+
+<div>
+    <ul>
+        {{range $key, $val := .}}
+            {{if $val}}
+                <h3>{{$key}} - {{$val}}</h3>
+            {{end}}
+        {{end}}
+    </ul>
+</div>
+
+<form action="/" method="POST">
+    <label for="fname">First name</label><input type="text" id="fname" name="fname"/>
+    <input type="submit" name="de button"/>
+</form>
+</body>
+
+</html>
