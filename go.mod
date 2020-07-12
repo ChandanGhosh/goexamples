@@ -11,6 +11,7 @@ require (
 	github.com/satori/go.uuid v1.2.0
 	github.com/shirou/gopsutil v2.20.5+incompatible
 	github.com/streadway/amqp v1.0.0
+	github.com/stretchr/testify v1.6.1 // indirect
 	golang.org/x/sys v0.0.0-20200620081246-981b61492c35 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 )

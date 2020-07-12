@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/chandanghosh/goexercises/ex-mongo-mvc/controllers"
+	"github.com/chandanghosh/goexercises/ex-httprouter-mvc/controllers"
 	"github.com/julienschmidt/httprouter"
 )
 

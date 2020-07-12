@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/chandanghosh/goexercises/ex-mongo-mvc/models"
+	"github.com/chandanghosh/goexercises/ex-httprouter-mvc/models"
 	"github.com/julienschmidt/httprouter"
 	uid "github.com/satori/go.uuid"
 )
