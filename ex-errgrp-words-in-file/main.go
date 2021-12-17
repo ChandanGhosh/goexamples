@@ -41,8 +41,8 @@ func main() {
 	var totalWordCount int64
 	var errGrp errgroup.Group
 	files := []string{
-		"atomic.html",
-		"errgroup.html",
+		"foo.txt",
+		"bar.txt",
 	}
 	for _, file := range files {
 		file := file
