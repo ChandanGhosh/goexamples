@@ -32,7 +32,7 @@ func NewServer(opts ...OptsFunc) *server {
 	}
 }
 
-func getMaxConn(n int) OptsFunc {
+func withMaxConn(n int) OptsFunc {
 	return func(o *Opts) {
 		o.maxConn = n
 	}
@@ -43,6 +43,6 @@ func withTLS(o *Opts) {
 }
 
 func main() {
-	server := NewServer(withTLS, getMaxConn(100))
+	server := NewServer(withTLS, withMaxConn(100))
 	fmt.Printf("%+v\n", server)
 }
