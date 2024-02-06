@@ -1,0 +1,28 @@
+{
+    "people": [
+        {
+            "name": "John Doe",
+            "age": 30
+        },
+        {
+            "name": "Jane Doe",
+            "age": 25
+        },
+        {
+            "name": "Joe Doe",
+            "age": 40
+        },
+        {
+            "name": "Jack Doe",
+            "age": 35
+        },
+        {
+            "name": "Jill Doe",
+            "age": 30
+        },
+        {
+            "name": "Jim Doe",
+            "age": 25
+        }
+    ]
+}

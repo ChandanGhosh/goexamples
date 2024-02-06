@@ -4,17 +4,17 @@ import (
 	"bytes"
 	_ "embed"
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 
+	"github.com/chandanghosh/goexercises/ex-embedfs/data"
 	"github.com/gorilla/mux"
 )
 
-//go:embed people.json
+//go:embed data/people/people.json
 var peopleStr string
 
-//go:embed people.json
+//go:embed data/people/people.json
 var peopleBytes []byte
 
 type People struct {
@@ -35,8 +35,10 @@ func GetPeopleEndpoint(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Println(peopleStr)
-	fmt.Println(string(peopleBytes))
+	// fmt.Println(peopleStr)
+	// fmt.Println(string(peopleBytes))
+
+	data.GetPeopleFromEmbeddedFile()
 
 	// router
 	router := mux.NewRouter()
